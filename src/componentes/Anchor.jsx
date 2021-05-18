@@ -1,9 +1,10 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
 export default function Anchor(props) {
     return (
         <>
-        <a href={props.link}><h4 className="subtitle-card">{props.subtitle}</h4></a>            
+        <Link to={props.link}><h4 className="subtitle-card">{props.subtitle}</h4> </Link>            
         </>
     )
 }
